@@ -17,4 +17,13 @@ const board = (function(){
 
 })();
 
-//Player object
+//Player object factory function
+function createPlayer(name, marker){
+    //Method to place marker on the board if spot is empty
+    function placeMarker(x,y){
+        if(board[x][y] == ''){
+            board[x][y] = marker;
+        }
+    }
+    return {name, marker, placeMarker};
+}
