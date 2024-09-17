@@ -1,0 +1,22 @@
+button{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+.space{
+    background-color: aqua;
+}
+body{
+    display: grid;
+    grid-template-columns:repeat(3, auto);
+}
+.start{
+    background-color: greenyellow;
+    color: white;
+    border-radius: 5px;
+}
+.reset{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
